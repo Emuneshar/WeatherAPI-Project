@@ -11,9 +11,13 @@ response = requests.get(url)
 if response.status_code == 200:
     data = response.json()
     temp = data['main']['temp']
+    for key in data:
+        print(key, ":", data[key])
     temp = (temp - 273.15)*1.8 + 32
     desc = data['weather'][0]['description']
     print(f'Temperature: {temp} F')
     print(f'Description: {desc} ')
 else:
     print("Sorry there was an error getting the weather data")
+
+
