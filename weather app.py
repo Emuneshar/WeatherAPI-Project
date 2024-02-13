@@ -19,6 +19,12 @@ if response.status_code == 200:
     temp = convertToF(temp)
     desc = data['weather'][0]['description']
     feelsLike = data['main']['feels_like']
+
+    # This is how we get the high temp for the day
+    highTemp = data['main']['temp_max']
+    highTemp = convertToF(highTemp)
+
+
     feelsLike = convertToF(feelsLike)
     print(f'Temperature: {temp} F')
     print(f'Description: {desc} ')
