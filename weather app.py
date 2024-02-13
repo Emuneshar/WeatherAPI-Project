@@ -7,3 +7,7 @@ city = input("Please enter the name of a city")
 url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKeys}'
 
 response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+    
