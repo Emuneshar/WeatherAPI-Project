@@ -14,3 +14,5 @@ if response.status_code == 200:
     temp = (temp - 273.15)*1.8 + 32
     desc = data['weather'][0]['description']
     print(f'Temperature: {temp} F')
+    print(f'Description: {desc} ')
+
