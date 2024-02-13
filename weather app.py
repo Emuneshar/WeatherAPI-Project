@@ -28,8 +28,8 @@ if response.status_code == 200:
     feelsLike = convertToF(feelsLike)
     print(f'Temperature: {temp} F')
     print(f'Description: {desc} ')
-    print(f'Feels like : {feelsLike}')
-    print(f'High temp for today: {highTemp}')
+    print(f'Feels like : {feelsLike}F')
+    print(f'High temp for today: {highTemp}F')
 else:
     print("Sorry there was an error getting the weather data")
 
