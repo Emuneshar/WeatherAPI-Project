@@ -15,4 +15,5 @@ if response.status_code == 200:
     desc = data['weather'][0]['description']
     print(f'Temperature: {temp} F')
     print(f'Description: {desc} ')
-
+else:
+    print("Sorry there was an error getting the weather data")
