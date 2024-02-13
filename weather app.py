@@ -16,7 +16,7 @@ if response.status_code == 200:
     temp = data['main']['temp']
     for key in data:
         print(key, ":", data[key])
-    temp = (temp - 273.15)*1.8 + 32
+    temp = convertToF(temp)
     desc = data['weather'][0]['description']
     feelsLike = data['main']['feels_like']
     print(f'Temperature: {temp} F')
