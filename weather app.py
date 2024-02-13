@@ -19,6 +19,7 @@ if response.status_code == 200:
     temp = convertToF(temp)
     desc = data['weather'][0]['description']
     feelsLike = data['main']['feels_like']
+    feelsLike = convertToF(feelsLike)
     print(f'Temperature: {temp} F')
     print(f'Description: {desc} ')
 else:
