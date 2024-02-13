@@ -24,6 +24,7 @@ if response.status_code == 200:
     highTemp = data['main']['temp_max']
     highTemp = convertToF(highTemp)
 
+    # homework is to get, convert and print out the low temp for the day
 
     feelsLike = convertToF(feelsLike)
     print(f'Temperature: {temp} F')
