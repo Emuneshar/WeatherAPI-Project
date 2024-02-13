@@ -11,4 +11,4 @@ response = requests.get(url)
 if response.status_code == 200:
     data = response.json()
     temp = data['main']['temp']
-    
+    temp = (temp - 273.15)*1.8 + 32
