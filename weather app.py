@@ -29,6 +29,7 @@ if response.status_code == 200:
     print(f'Temperature: {temp} F')
     print(f'Description: {desc} ')
     print(f'Feels like : {feelsLike}')
+    print(f'High temp for today: {highTemp}')
 else:
     print("Sorry there was an error getting the weather data")
 
