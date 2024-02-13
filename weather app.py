@@ -6,6 +6,9 @@ city = input("Please enter the name of a city: \n")
 
 url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKeys}'
 
+def convertToF(kelvin):
+    return (kelvin-273.15)*1.8 +32
+
 response = requests.get(url)
 
 if response.status_code == 200:
